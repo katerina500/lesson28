@@ -1,0 +1,12 @@
+@import '../veriables';
+.inform {
+    padding: 100px 0;
+    position: relative;
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 140%;
+        max-width: 760px;
+        color: $Grayscale50;
+        margin-bottom: 50px;}
+}

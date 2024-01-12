@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"inf.min.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/blocks/inf.scss","../scss/veriables.scss"],"names":[],"mappings":"AACA,QACI,gBACA,kBACA,eACI,gBACA,eACA,iBACA,gBACA,MCRM,KDSN","file":"inf.min.css"}
