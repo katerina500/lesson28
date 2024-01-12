@@ -1,0 +1,15 @@
+@import '../veriables';
+.structure {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px;
+}
+.structure__block {
+    display: grid;
+    max-height: 620px; 
+    background-size: cover; 
+    background-position: center; 
+    text-align: center; 
+    align-content: center; 
+}
