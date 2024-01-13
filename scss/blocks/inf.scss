@@ -8,5 +8,21 @@
         line-height: 140%;
         max-width: 760px;
         color: $Grayscale50;
-        margin-bottom: 50px;}
+        margin-bottom: 50px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        ::after {
+            position: absolute;
+            content: '';
+            top: 150px;
+            right: 0;
+            width: 529px;
+            height: 2px;
+            background: #000
+        }
+    }    
 }
