@@ -1,1 +1,78 @@
 @import '../veriables';
+.pdf {
+    margin-top: 50px;
+}
+.pdf__subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    &::after {
+        position: relative;
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 529px;
+        height: 2px;
+        background-color: #000;
+        margin-right: -100%;
+        right: -8px;
+    }
+}
+.pdf__title {
+    color: $Grayscale50;
+    font-family: Montserrat;
+    width: 863px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 140%;
+}
+.pdf__ul {
+    margin: 20px;
+    width: 634px;
+    color: $Grayscale-10;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%; 
+}
+.pdf__image {
+    position: relative;
+    left: 500px;
+    bottom: 120px;
+}
+.pdf__link_button {
+    background-color: $PrimaryBlue100;
+    color: #fff;
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 14px 32px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    position: absolute;
+}
+@media screen and (max-width: 767px) {
+    .pdf {
+        margin-bottom: 100px;
+        position: relative;
+    }
+    .pdf__subtitle {
+        font-size: 12px;
+    }
+    .pdf__title {
+        font-size: 20px;
+        width: 100%;
+    }
+    .pdf__ul {
+        font-size: 16px;
+        width: 100%;
+    }
+    .pdf__image {
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .pdf__link_button {
+        top: 370px;
+    }
+}

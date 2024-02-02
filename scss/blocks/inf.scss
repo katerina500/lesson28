@@ -2,27 +2,214 @@
 .inform {
     padding: 100px 0;
     position: relative;
-    &__title {
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 140%;
-        max-width: 760px;
-        color: $Grayscale50;
-        margin-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.inform__title {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    max-width: 760px;
+    color: $Grayscale50;
+    margin-bottom: 50px;
+}
+
+.inform__subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    &::after {
+        position: relative;
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 529px;
+        height: 2px;
+        background-color: #000;
+        margin-right: -100%;
+        right: -13px;
     }
-    &__subtitle {
+}
+
+.inform__discription {
+    text-align: left;
+    color: $Grayscale-10;
+    width: 654px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 100px;
+}
+
+.inform__items {
+    width: auto;
+    height: 460px;
+    margin-top: 50px;
+    background-color: $PrimaryBlue100;
+    position: relative;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+    grid-row-gap: 25px;
+    margin-bottom: 300px;
+}
+.min_image {
+    display: none;
+}
+.inform__item .box_1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.inform__item .box_2 {
+    grid-column-start: 2;
+}
+.inform__item .box_3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.inform__item {
+    margin: 60px;
+    border-radius: 100px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.inform__item img {
+    grid-column: 1;
+}
+.inform__item p {
+    grid-column: 2;
+    width: 343px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.inform__text {
+    top: 300px;
+    width: 634px;
+    right: 0;
+    color: $Grayscale-10;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    position: relative;
+}
+
+.inform__button {
+    background-color: $PrimaryBlue100;
+    color: #fff;
+    display: inline-flex;
+    padding: 14px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.inform__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+.inform__image_2 {
+    display: none;
+}
+.inform__image_3 {
+    display: none;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .inform__items {
+        height: 702px;
+        grid-template-rows: repeat(5fr, 1fr);
+        grid-template-columns: 1fr ;
+    }
+    .inform__item {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .inform__item p {
+        grid-column: 2;
+        height: 48px;
+}
+    .inform__text {
+        top: 200px;
+    }
+    .inform__image {
+        display: none;
+    }
+    .inform__image_2 {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .inform__image_3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .inform__subtitle {
+        font-size: 12px;
+    }
+    .inform__title {
+        font-size: 20px;
+    }
+    .inform__discription {
         font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%;
-        ::after {
-            position: absolute;
-            content: '';
-            top: 150px;
-            right: 0;
-            width: 529px;
-            height: 2px;
-            background: #000
-        }
-    }    
+        width: 300px;
+    }
+    .inform__items {
+        margin-top: 0;
+        width: 100%;
+        height: 590px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: 90px;
+    }
+    .inform__item {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 100px auto;
+    }
+    .inform__item p {
+        font-size: 16px;
+        width: 200px;
+        height: 40px;
+        grid-column: 2;
+    }
+    .max_image {
+        display: none;
+    }
+    .min_image {
+        display: grid;
+        grid-column: 1;
+    }
+    .inform__text {
+        font-size: 16px;
+        width: 100%;
+        top: 50px;
+        height: 390px;
+    }
+    .inform__image {
+        display: none;
+    }
+    .inform__image_2 {
+        display: none;
+    }
+    .inform__image_3 {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
